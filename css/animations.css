@@ -1,0 +1,275 @@
+/* ================================================
+   MAZTECHDESIGNS — Animations & Effects
+   ================================================ */
+
+/* ---------- Service Card Glow Effect ---------- */
+.service-card {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 240, 181, 0.3),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity var(--duration-base);
+}
+
+.service-card:hover::after {
+  opacity: 1;
+}
+
+/* ---------- Staggered Reveals ---------- */
+.services__grid .service-card:nth-child(1) { transition-delay: 0.05s; }
+.services__grid .service-card:nth-child(2) { transition-delay: 0.1s; }
+.services__grid .service-card:nth-child(3) { transition-delay: 0.15s; }
+.services__grid .service-card:nth-child(4) { transition-delay: 0.2s; }
+.services__grid .service-card:nth-child(5) { transition-delay: 0.25s; }
+.services__grid .service-card:nth-child(6) { transition-delay: 0.3s; }
+
+.portfolio__grid .portfolio__item:nth-child(1) { transition-delay: 0.05s; }
+.portfolio__grid .portfolio__item:nth-child(2) { transition-delay: 0.1s; }
+.portfolio__grid .portfolio__item:nth-child(3) { transition-delay: 0.15s; }
+.portfolio__grid .portfolio__item:nth-child(4) { transition-delay: 0.2s; }
+.portfolio__grid .portfolio__item:nth-child(5) { transition-delay: 0.25s; }
+.portfolio__grid .portfolio__item:nth-child(6) { transition-delay: 0.3s; }
+
+.process__steps .process__step:nth-child(1) { transition-delay: 0.05s; }
+.process__steps .process__step:nth-child(2) { transition-delay: 0.1s; }
+.process__steps .process__step:nth-child(3) { transition-delay: 0.15s; }
+.process__steps .process__step:nth-child(4) { transition-delay: 0.2s; }
+.process__steps .process__step:nth-child(5) { transition-delay: 0.25s; }
+.process__steps .process__step:nth-child(6) { transition-delay: 0.3s; }
+
+.timeline__item:nth-child(1) .timeline__content { transition-delay: 0.05s; }
+.timeline__item:nth-child(2) .timeline__content { transition-delay: 0.15s; }
+.timeline__item:nth-child(3) .timeline__content { transition-delay: 0.25s; }
+.timeline__item:nth-child(4) .timeline__content { transition-delay: 0.35s; }
+.timeline__item:nth-child(5) .timeline__content { transition-delay: 0.45s; }
+
+/* ---------- Mobile Menu Link Stagger ---------- */
+.mobile-menu__link:nth-child(1) { transition-delay: 0.1s; }
+.mobile-menu__link:nth-child(2) { transition-delay: 0.15s; }
+.mobile-menu__link:nth-child(3) { transition-delay: 0.2s; }
+.mobile-menu__link:nth-child(4) { transition-delay: 0.25s; }
+.mobile-menu__link:nth-child(5) { transition-delay: 0.3s; }
+.mobile-menu__link:nth-child(6) { transition-delay: 0.35s; }
+
+/* ---------- Floating Animation ---------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.about__image-card--1 { animation: float 6s ease-in-out infinite; }
+.about__image-card--2 { animation: float 6s ease-in-out 1s infinite; }
+.about__image-card--3 { animation: float 6s ease-in-out 2s infinite; }
+
+/* ---------- Gradient Text Shimmer ---------- */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.hero__title-line--accent {
+  background-size: 200% auto;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ---------- Glow Pulse ---------- */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 240, 181, 0); }
+  50% { box-shadow: 0 0 30px rgba(0, 240, 181, 0.15); }
+}
+
+.btn--primary:hover {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+/* ---------- Portfolio Card 3D Tilt Hint ---------- */
+.portfolio__item-inner {
+  transition: transform 0.6s var(--ease-out-expo);
+  transform-style: preserve-3d;
+}
+
+/* ---------- Typing Cursor Effect for Hero Badge ---------- */
+.hero__badge::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 14px;
+  background: var(--color-mint);
+  margin-left: 4px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ---------- Scroll Indicator Bounce ---------- */
+.hero__scroll {
+  animation: scrollBounce 3s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ---------- Logo Hover Spin ---------- */
+.nav__logo-icon svg {
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.nav__logo:hover .nav__logo-icon svg {
+  transform: rotate(60deg);
+}
+
+/* ---------- Service Card Icon Animation ---------- */
+.service-card__icon svg {
+  transition: transform 0.4s var(--ease-out-expo);
+}
+
+.service-card:hover .service-card__icon svg {
+  transform: scale(1.1) translateY(-2px);
+}
+
+/* ---------- Process Step Connector Lines ---------- */
+@media (min-width: 769px) {
+  .process__step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: -16px;
+    width: 32px;
+    height: 2px;
+    background: var(--color-border);
+  }
+}
+
+/* ---------- Form Input Focus Animation ---------- */
+.contact__form-input {
+  position: relative;
+}
+
+.contact__form-group {
+  position: relative;
+}
+
+.contact__form-group::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width 0.4s var(--ease-out-expo);
+  border-radius: 1px;
+}
+
+.contact__form-group:focus-within::after {
+  width: 100%;
+}
+
+/* ---------- Background Noise Texture ---------- */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.015;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* ---------- Testimonial Card Entrance ---------- */
+.testimonial-card {
+  transition: transform 0.6s var(--ease-out-expo), opacity 0.6s var(--ease-out-expo);
+}
+
+/* ---------- CTA Section Glow ---------- */
+.cta__inner {
+  transition: border-color var(--duration-base);
+}
+
+.cta__inner:hover {
+  border-color: rgba(0, 240, 181, 0.15);
+}
+
+/* ---------- Timeline Dot Pulse ---------- */
+.timeline__item:hover .timeline__year::after {
+  animation: dotPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 240, 181, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(0, 240, 181, 0); }
+}
+
+/* ---------- Smooth Parallax Layers ---------- */
+.testimonials__bg-text {
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+/* ---------- Portfolio Item Hidden State for Filtering ---------- */
+.portfolio__item--hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* ---------- About Value Hover ---------- */
+.about__value {
+  padding: 16px;
+  border-radius: var(--radius-md);
+  transition: background var(--duration-fast);
+}
+
+.about__value:hover {
+  background: rgba(0, 240, 181, 0.03);
+}
+
+/* ---------- Section Divider Decorations ---------- */
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-mint), transparent);
+  opacity: 0.3;
+}
+
+.process::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-blue), transparent);
+  opacity: 0.3;
+}

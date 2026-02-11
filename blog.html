@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Web Design Blog | Tips, Trends & Insights — MazTechDesigns</title>
+  <meta name="description" content="Expert web design tips, e-commerce trends, Shopify guides, and UX/UI insights from the MazTechDesigns team. Stay ahead with actionable advice for your business.">
+  <meta name="keywords" content="web design blog, Shopify tips, e-commerce trends, UX design insights, website performance tips, small business web design advice">
+  <meta name="author" content="MazTechDesigns">
+  <link rel="canonical" href="https://maztechdesigns.co.uk/blog.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maztechdesigns.co.uk/blog.html">
+  <meta property="og:title" content="Web Design Blog | Tips, Trends & Insights — MazTechDesigns">
+  <meta property="og:description" content="Expert web design tips, e-commerce trends, and UX insights from the MazTechDesigns team.">
+  <meta property="og:image" content="https://maztechdesigns.co.uk/images/og-image.jpg">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Design Blog | MazTechDesigns">
+  <meta name="twitter:description" content="Expert web design tips, e-commerce trends, and UX insights from the MazTechDesigns team.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0F">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>M</text></svg>">
+
+  <style>
+    .blog-hero { padding: 160px 0 80px; text-align: center; }
+    .blog-hero h1 { font-family: var(--font-heading); font-size: clamp(32px, 5vw, 52px); font-weight: 700; letter-spacing: -1px; margin-bottom: 16px; }
+    .blog-hero p { font-size: 18px; color: var(--color-text-secondary); max-width: 560px; margin: 0 auto; }
+    .blog-categories { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 40px 0 64px; }
+    .blog-categories a { padding: 8px 20px; font-size: 14px; font-weight: 500; color: var(--color-text-muted); border: 1px solid var(--color-border); border-radius: 100px; transition: all 0.3s; }
+    .blog-categories a:hover, .blog-categories a.active { color: var(--color-bg); background: var(--color-mint); border-color: var(--color-mint); }
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding-bottom: var(--section-padding); }
+    .blog-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; transition: all 0.4s var(--ease-out-expo); }
+    .blog-card:hover { border-color: var(--color-border-hover); transform: translateY(-4px); }
+    .blog-card__image { aspect-ratio: 16/9; overflow: hidden; }
+    .blog-card__placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--color-text-muted); }
+    .blog-card__body { padding: 28px; }
+    .blog-card__meta { display: flex; gap: 16px; font-size: 12px; color: var(--color-text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    .blog-card__tag { color: var(--color-mint); }
+    .blog-card__title { font-family: var(--font-heading); font-size: 20px; font-weight: 700; margin-bottom: 12px; line-height: 1.3; transition: color 0.2s; }
+    .blog-card:hover .blog-card__title { color: var(--color-mint); }
+    .blog-card__excerpt { font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .blog-card__link { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--color-mint); transition: gap 0.2s; }
+    .blog-card__link:hover { gap: 10px; }
+    .blog-cta { text-align: center; padding: 80px 0; }
+    .blog-cta h2 { font-family: var(--font-heading); font-size: 28px; font-weight: 700; margin-bottom: 16px; }
+    .blog-cta p { color: var(--color-text-secondary); margin-bottom: 32px; }
+    @media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) { .blog-grid { grid-template-columns: 1fr; } }
+  </style>
+
+  <!-- Structured Data: Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "MazTechDesigns Blog",
+    "description": "Web design tips, e-commerce trends, Shopify guides, and UX/UI design insights from MazTechDesigns.",
+    "url": "https://maztechdesigns.co.uk/blog.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MazTechDesigns",
+      "url": "https://maztechdesigns.co.uk"
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "10 Web Design Trends Dominating 2025",
+        "description": "From AI-driven layouts to kinetic typography, discover the web design trends shaping 2025.",
+        "datePublished": "2025-02-10",
+        "author": { "@type": "Organization", "name": "MazTechDesigns" }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Why Your Shopify Store Isn't Converting (And How to Fix It)",
+        "description": "7 conversion killers hiding in your Shopify store and the design fixes that can double your sales.",
+        "datePublished": "2025-02-03",
+        "author": { "@type": "Organization", "name": "MazTechDesigns" }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Core Web Vitals: The Complete Guide for Small Business Websites",
+        "description": "A plain-English breakdown of LCP, FID, and CLS — and how to score green on every metric.",
+        "datePublished": "2025-01-27",
+        "author": { "@type": "Organization", "name": "MazTechDesigns" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav nav--scrolled">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">
+          <svg viewBox="0 0 40 40" width="40" height="40">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00F0B5"/>
+                <stop offset="100%" style="stop-color:#0080FF"/>
+              </linearGradient>
+            </defs>
+            <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="url(#logoGrad)" font-size="14" font-weight="700" font-family="Space Grotesk">M</text>
+          </svg>
+        </span>
+        <span class="nav__logo-text">MazTech<span class="accent">Designs</span></span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#about" class="nav__link">About</a>
+        <a href="index.html#services" class="nav__link">Services</a>
+        <a href="index.html#portfolio" class="nav__link">Portfolio</a>
+        <a href="blog.html" class="nav__link" style="color: var(--color-mint);">Blog</a>
+        <a href="index.html#contact" class="nav__link nav__link--cta">Start a Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="container">
+        <h1>Web Design <span class="text-gradient">Blog</span></h1>
+        <p>Expert tips, industry trends, and actionable insights to help your business grow online.</p>
+
+        <div class="blog-categories">
+          <a href="#" class="active">All Posts</a>
+          <a href="#">Web Design</a>
+          <a href="#">E-Commerce</a>
+          <a href="#">Shopify</a>
+          <a href="#">UX/UI</a>
+          <a href="#">Performance</a>
+          <a href="#">Branding</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="blog-grid">
+
+          <!-- Post 1 -->
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #00F0B5, #0080FF);">
+                Web Design Trends
+              </div>
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">Web Design</span>
+                <span>10 Feb 2025</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="blog-card__title">10 Web Design Trends Dominating 2025</h2>
+              <p class="blog-card__excerpt">From AI-driven adaptive layouts and kinetic typography to immersive 3D scroll experiences, these are the web design trends shaping the digital landscape in 2025. Learn which ones are worth adopting for your business.</p>
+              <span class="blog-card__link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #6C5CE7, #A29BFE);">
+                Shopify Conversions
+              </div>
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">E-Commerce</span>
+                <span>3 Feb 2025</span>
+                <span>12 min read</span>
+              </div>
+              <h2 class="blog-card__title">Why Your Shopify Store Isn't Converting (And How to Fix It)</h2>
+              <p class="blog-card__excerpt">Stunning product photos but zero sales? Here are the 7 conversion killers hiding in plain sight on most Shopify stores — plus the design fixes that can double your revenue.</p>
+              <span class="blog-card__link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #FF6B35, #F7C948);">
+                Core Web Vitals
+              </div>
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">Performance</span>
+                <span>27 Jan 2025</span>
+                <span>10 min read</span>
+              </div>
+              <h2 class="blog-card__title">Core Web Vitals: The Complete Guide for Small Business Websites</h2>
+              <p class="blog-card__excerpt">A plain-English breakdown of LCP, FID, and CLS — what they mean, why Google cares, and the step-by-step playbook to score green on every metric without touching code.</p>
+              <span class="blog-card__link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 4 -->
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #FD79A8, #E84393);">
+                Brand Identity
+              </div>
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">Branding</span>
+                <span>20 Jan 2025</span>
+                <span>7 min read</span>
+              </div>
+              <h2 class="blog-card__title">How to Build a Brand Identity That Stands Out Online</h2>
+              <p class="blog-card__excerpt">Your brand is more than a logo. Learn how to create a cohesive visual identity — colours, typography, tone of voice, and design language — that makes your business instantly recognisable.</p>
+              <span class="blog-card__link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 5 -->
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #00B894, #00CEC9);">
+                UX Research
+              </div>
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">UX/UI</span>
+                <span>13 Jan 2025</span>
+                <span>9 min read</span>
+              </div>
+              <h2 class="blog-card__title">UX Research on a Budget: 5 Methods That Cost Nothing</h2>
+              <p class="blog-card__excerpt">You don't need a six-figure research budget to understand your users. These five free UX research methods will uncover insights that transform your website's performance.</p>
+              <span class="blog-card__link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 6 -->
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #0984E3, #74B9FF);">
+                SEO for Small Business
+              </div>
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">Performance</span>
+                <span>6 Jan 2025</span>
+                <span>11 min read</span>
+              </div>
+              <h2 class="blog-card__title">SEO for Small Business Websites: A Practical Guide for 2025</h2>
+              <p class="blog-card__excerpt">Forget the jargon. This is the no-fluff SEO checklist every small business owner needs — from local SEO setup and Google Business Profile to on-page optimisation that actually moves the needle.</p>
+              <span class="blog-card__link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 7 -->
+          <article class="blog-card">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #D4A853, #F0C27F);">
+                E-Commerce Design
+              </div>
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">E-Commerce</span>
+                <span>30 Dec 2024</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="blog-card__title">The Anatomy of a High-Converting Product Page</h2>
+              <p class="blog-card__excerpt">We break down every element of a product page that sells — from image galleries and trust badges to urgency triggers and mobile-first checkout design. With real examples from our portfolio.</p>
+              <span class="blog-card__link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Blog CTA -->
+        <div class="blog-cta">
+          <h2>Want a website that actually works?</h2>
+          <p>We design high-performance websites that rank, convert, and grow your business.</p>
+          <a href="index.html#contact" class="btn btn--primary btn--lg">
+            <span>Get a Free Quote</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <svg viewBox="0 0 40 40" width="36" height="36">
+              <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+              <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="url(#logoGrad)" font-size="14" font-weight="700" font-family="Space Grotesk">M</text>
+            </svg>
+            <span>MazTech<span class="accent">Designs</span></span>
+          </a>
+          <p class="footer__desc">Crafting bold, high-performance digital experiences for ambitious brands worldwide.</p>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html#about" class="footer__link">About</a>
+          <a href="index.html#services" class="footer__link">Services</a>
+          <a href="index.html#portfolio" class="footer__link">Portfolio</a>
+          <a href="blog.html" class="footer__link">Blog</a>
+          <a href="index.html#contact" class="footer__link">Contact</a>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Categories</h4>
+          <a href="#" class="footer__link">Web Design</a>
+          <a href="#" class="footer__link">E-Commerce</a>
+          <a href="#" class="footer__link">UX/UI</a>
+          <a href="#" class="footer__link">Performance</a>
+          <a href="#" class="footer__link">Branding</a>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Legal</h4>
+          <a href="privacy-policy.html" class="footer__link">Privacy Policy</a>
+          <a href="terms-of-service.html" class="footer__link">Terms of Service</a>
+          <a href="cookie-policy.html" class="footer__link">Cookie Policy</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 MazTechDesigns. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vercel Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>

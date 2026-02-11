@@ -1,0 +1,9 @@
+# MazTechDesigns — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://maztechdesigns.co.uk/sitemap.xml
+
+# Block crawling of internal assets
+Disallow: /_vercel/

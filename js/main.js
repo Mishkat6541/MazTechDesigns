@@ -460,17 +460,32 @@
       }
 
       if (valid) {
-        // Simulate submission
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         submitBtn.innerHTML = '<span>Sending...</span>';
         submitBtn.disabled = true;
 
-        setTimeout(() => {
-          formSuccess.classList.add('active');
-          contactForm.reset();
-          submitBtn.innerHTML = '<span>Send Message</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>';
-          submitBtn.disabled = false;
-        }, 1500);
+        const formData = new FormData(contactForm);
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData,
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.success) {
+              formSuccess.classList.add('active');
+              contactForm.reset();
+            } else {
+              alert('Something went wrong. Please try again or email us directly at hello@MazTechDesigns.co.uk');
+            }
+          })
+          .catch(() => {
+            alert('Network error. Please try again or email us directly at hello@MazTechDesigns.co.uk');
+          })
+          .finally(() => {
+            submitBtn.innerHTML = '<span>Send Message</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>';
+            submitBtn.disabled = false;
+          });
       }
     });
   }

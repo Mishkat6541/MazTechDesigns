@@ -1,4 +1,4 @@
-# MazTechDesigns — 90-Day SEO Execution Plan
+# MazTechDesigns - 90-Day SEO Execution Plan
 **Goal:** Zero to consistent daily impressions and clicks within 90 days.
 **Last updated:** February 2026
 
@@ -7,10 +7,10 @@
 ## PHASE 1 AUDIT FINDINGS
 
 ### Root cause of zero impressions:
-1. **Single indexable URL** — all content was on index.html. Google has nothing to crawl.
-2. **Thin content per topic** — 2–3 sentences per service. Not enough for topical authority.
-3. **No dedicated service pages** — Google cannot rank a page for "Shopify web design" when that phrase appears once on a general page.
-4. **No location pages** — zero local SEO signal for London searches.
+1. **Single indexable URL** - all content was on index.html. Google has nothing to crawl.
+2. **Thin content per topic** - 2–3 sentences per service. Not enough for topical authority.
+3. **No dedicated service pages** - Google cannot rank a page for "Shopify web design" when that phrase appears once on a general page.
+4. **No location pages** - zero local SEO signal for London searches.
 5. **Sitemap had 5 URLs**, 3 of which were legal pages with 0 search value.
 
 ### Phase 1 actions completed:
@@ -30,7 +30,7 @@
 
 ---
 
-## PHASE 2 — 50 LOW-COMPETITION KEYWORDS
+## PHASE 2 - 50 LOW-COMPETITION KEYWORDS
 
 ### Targeting criteria:
 - No keyword with "web design agency London" level competition
@@ -109,12 +109,12 @@
 
 ---
 
-## PHASE 3 — 100 BACKLINK OPPORTUNITIES
+## PHASE 3 - 100 BACKLINK OPPORTUNITIES
 
 ### Category A: UK Business Directories (submit immediately, free)
 | # | Site | URL | Action | Anchor Text |
 |---|------|-----|--------|-------------|
-| 1 | Yell.com | yell.com/ucs/add | Create business listing | "MazTechDesigns — Web Design Agency UK" |
+| 1 | Yell.com | yell.com/ucs/add | Create business listing | "MazTechDesigns - Web Design Agency UK" |
 | 2 | Thomson Local | thomsonlocal.com | Submit listing | "MazTechDesigns web designer London" |
 | 3 | Scoot | scoot.co.uk | Submit listing | "MazTechDesigns" |
 | 4 | FreeIndex | freeindex.co.uk | Create profile | "web designer London" |
@@ -156,7 +156,7 @@
 | 32 | Bing Places | bingplaces.com | Complete profile | NAP citation |
 | 33 | Apple Maps Connect | mapsconnect.apple.com | Create listing | NAP citation |
 | 34 | Facebook Business | facebook.com/business | Create page, link website | "MazTechDesigns" |
-| 35 | LinkedIn Company Page | linkedin.com/company | Create page | "MazTechDesigns — web design agency" |
+| 35 | LinkedIn Company Page | linkedin.com/company | Create page | "MazTechDesigns - web design agency" |
 | 36 | Chamber of Commerce UK | britishchambers.org.uk | Register | "MazTechDesigns" |
 | 37 | Enterprise Nation | enterprisenation.com | Create profile | "web design agency UK" |
 | 38 | Startups.co.uk | startups.co.uk | Submit to directory | "MazTechDesigns web design" |
@@ -233,7 +233,7 @@
 
 ---
 
-## PHASE 4 — 30 PROGRAMMATIC PAGE TEMPLATES
+## PHASE 4 - 30 PROGRAMMATIC PAGE TEMPLATES
 
 These pages are designed to capture long-tail local and niche queries at scale.
 Build each as a dedicated HTML page. Use the template below, swapping variables.
@@ -304,7 +304,7 @@ Internal links to: /services/web-design, /services/ecommerce, /services/shopify-
 
 ---
 
-## PHASE 5 — INTERNAL LINKING & TOPIC CLUSTER STRUCTURE
+## PHASE 5 - INTERNAL LINKING & TOPIC CLUSTER STRUCTURE
 
 ### Core topic cluster:
 ```
@@ -336,7 +336,7 @@ Homepage (index.html)
 5. **Homepage** must link to all 4 service pages in the Services section (update the service card links)
 6. **Maximum link depth:** any page must be reachable in 3 clicks from homepage
 
-### Update index.html service cards — add links:
+### Update index.html service cards - add links:
 Change each service card `<article>` to link to its service page:
 - Web Design card → `/services/web-design`
 - Branding card → `/services/branding`
@@ -353,7 +353,7 @@ Change each service card `<article>` to link to its service page:
 
 ---
 
-## PHASE 6 — WEEKLY SEO TASK SYSTEM
+## PHASE 6 - WEEKLY SEO TASK SYSTEM
 
 ### Week 1 (Days 1–7): Foundation
 - [ ] Submit sitemap to Google Search Console
@@ -409,7 +409,7 @@ Continue building:
 - 2 HARO responses/week
 
 ### Week 9–12 (Days 57–84): Authority & Refresh
-- [ ] Identify which pages have impressions but low clicks (CTR optimisation) — update meta titles
+- [ ] Identify which pages have impressions but low clicks (CTR optimisation) - update meta titles
 - [ ] Add FAQ schema to any page missing it
 - [ ] Start internal analytics review: which blog posts drive traffic?
 - [ ] Refresh first batch of blog posts with updated stats and new internal links
@@ -423,13 +423,13 @@ Continue building:
 ## CRITICAL SUCCESS METRICS TO TRACK IN GSC
 
 Check Google Search Console weekly for:
-1. **Total Impressions** — are they growing week on week?
-2. **Total Clicks** — are clicks growing?
-3. **Average CTR** — below 2% means your titles need work
-4. **Average Position** — positions 11–20 are "page 2 trap" — these pages need freshening
-5. **Top Queries** — what are people actually searching to find you?
-6. **Top Pages by Impressions** — which pages are getting seen?
-7. **Index Coverage** — are all your pages indexed?
+1. **Total Impressions** - are they growing week on week?
+2. **Total Clicks** - are clicks growing?
+3. **Average CTR** - below 2% means your titles need work
+4. **Average Position** - positions 11–20 are "page 2 trap" - these pages need freshening
+5. **Top Queries** - what are people actually searching to find you?
+6. **Top Pages by Impressions** - which pages are getting seen?
+7. **Index Coverage** - are all your pages indexed?
 
 ### 90-day targets (realistic, based on low starting point):
 - **Day 30:** 500+ impressions/week, 5–10 clicks/week
@@ -440,12 +440,12 @@ Check Google Search Console weekly for:
 
 ## QUICK WINS (do these in the next 48 hours)
 
-1. **Submit sitemap** to Google Search Console — `/sitemap.xml` — 5 minutes
-2. **Request indexing** for the 5 new service/location pages via GSC URL Inspection — 10 minutes
-3. **Claim Google Business Profile** and fill in every field — 20 minutes
-4. **Submit to Yell.com** — 10 minutes
-5. **Create Clutch profile** — 20 minutes
-6. **Email clients** (Indian Collection, Celeste Living, DepopDrop) asking for a footer credit link — 5 minutes each
+1. **Submit sitemap** to Google Search Console - `/sitemap.xml` - 5 minutes
+2. **Request indexing** for the 5 new service/location pages via GSC URL Inspection - 10 minutes
+3. **Claim Google Business Profile** and fill in every field - 20 minutes
+4. **Submit to Yell.com** - 10 minutes
+5. **Create Clutch profile** - 20 minutes
+6. **Email clients** (Indian Collection, Celeste Living, DepopDrop) asking for a footer credit link - 5 minutes each
 
 These 6 actions take under 2 hours and will have measurable impact within 2–3 weeks.
 

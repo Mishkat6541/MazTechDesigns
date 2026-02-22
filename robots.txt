@@ -1,4 +1,4 @@
-# MazTechDesigns — robots.txt
+# MazTechDesigns - robots.txt
 User-agent: *
 Allow: /
 

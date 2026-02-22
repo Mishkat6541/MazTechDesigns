@@ -1,5 +1,5 @@
 /* ================================================
-   MAZTECHDESIGNS — Main JavaScript
+   MAZTECHDESIGNS - Main JavaScript
    ================================================ */
 
 (function () {
